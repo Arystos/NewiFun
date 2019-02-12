@@ -12,6 +12,7 @@
 		19D8EAFE2213031F00551429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EAFC2213031F00551429 /* Main.storyboard */; };
 		19D8EB002213032000551429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EAFF2213032000551429 /* Assets.xcassets */; };
 		19D8EB032213032000551429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EB012213032000551429 /* LaunchScreen.storyboard */; };
+		19D8EB0B2213046A00551429 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EB0A2213046A00551429 /* ViewControllerMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		19D8EAFF2213032000551429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D8EB022213032000551429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D8EB042213032000551429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D8EB0A2213046A00551429 /* ViewControllerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				19D8EAF82213031F00551429 /* AppDelegate.swift */,
 				19D8EAFA2213031F00551429 /* ViewController.swift */,
+				19D8EB0A2213046A00551429 /* ViewControllerMap.swift */,
 				19D8EAFC2213031F00551429 /* Main.storyboard */,
 				19D8EAFF2213032000551429 /* Assets.xcassets */,
 				19D8EB012213032000551429 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				19D8EAFB2213031F00551429 /* ViewController.swift in Sources */,
 				19D8EAF92213031F00551429 /* AppDelegate.swift in Sources */,
+				19D8EB0B2213046A00551429 /* ViewControllerMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
