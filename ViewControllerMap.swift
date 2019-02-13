@@ -12,6 +12,13 @@ import CoreLocation // Imposta i comandi della Localizzazione
 
 class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet var dovevuoiandare: UILabel!
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var bottone2: UIButton!
+    @IBOutlet var bottone1: UIButton!
+    
+    
+    
     @IBOutlet weak var mapView: MKMapView! // Reference alla mapView
     
     var locationManager: CLLocationManager! // variabile che gestisce la posizione

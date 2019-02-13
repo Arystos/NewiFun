@@ -26,11 +26,19 @@
                                 <rect key="frame" x="149" y="744" width="116" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
+                                <connections>
+                                    <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="RxW-TP-WeV"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-Qu-WZP">
                                 <rect key="frame" x="60" y="116" width="295" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
+                                <connections>
+                                    <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qn2-NK-Ufb"/>
+                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="Jjl-Vf-WpS"/>
+                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-db-aBb"/>
+                                </connections>
                             </button>
                             <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" barStyle="black" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
                                 <rect key="frame" x="20" y="527" width="374" height="56"/>
@@ -52,12 +60,31 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottone1" destination="duN-6T-jtA" id="xLD-g5-ofm"/>
+                        <outlet property="bottone2" destination="XBA-Qu-WZP" id="LeR-VJ-AVQ"/>
+                        <outlet property="dovevuoiandare" destination="TqU-uk-nOt" id="zQT-fD-lgS"/>
                         <outlet property="mapView" destination="iqs-b3-W9Y" id="hoM-WY-jIA"/>
+                        <outlet property="searchBar" destination="VtE-Es-ZO9" id="DaA-YE-8Zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="143"/>
+        </scene>
+        <!--scenaricerca-->
+        <scene sceneID="uGU-h2-jfJ">
+            <objects>
+                <viewController title="scenaricerca" id="7CI-JG-McA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qht-Ll-as1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K1A-ga-Z86"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNV-5S-pgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="143"/>
         </scene>
     </scenes>
     <resources>
