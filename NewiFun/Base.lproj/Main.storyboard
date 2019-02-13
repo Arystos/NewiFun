@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,42 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller Map-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewControllerMap" customModule="NewiFun" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-b3-W9Y">
-                                <rect key="frame" x="0.0" y="208" width="414" height="688"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambinoafuoco iconpiccopla.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8B-vN-u1s">
-                                <rect key="frame" x="135" y="56" width="144" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLF-Ng-8BJ">
-                                <rect key="frame" x="142" y="65" width="131" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="rAr-DL-LJW" kind="show" id="7Vi-29-S69"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="mapView" destination="iqs-b3-W9Y" id="hoM-WY-jIA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="347.82608695652175" y="138.61607142857142"/>
-        </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="jiv-k3-5m0">
             <objects>
                 <viewController id="rAr-DL-LJW" sceneMemberID="viewController">
@@ -60,25 +25,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="blackTranslucent" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wvy-aB-bct">
-                                <rect key="frame" x="0.0" y="542" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambinoafuoco iconpiccopla.png" translatesAutoresizingMaskIntoConstraints="NO" id="hEq-Sn-DH8">
                                 <rect key="frame" x="100" y="165" width="214" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="blackTranslucent" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wvy-aB-bct">
+                                <rect key="frame" x="0.0" y="509" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <viewLayoutGuide key="safeArea" id="J54-pd-dJ5"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="mhA-Hp-bMA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nn-qa-FGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108.6956521739132" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1974" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="SLv-BE-qlL">
             <objects>
                 <viewController id="G9R-7S-OZx" sceneMemberID="viewController">
@@ -109,9 +75,6 @@
                                                     <state key="normal" title="Parchi Giuochi">
                                                         <color key="titleColor" red="0.007245790155" green="0.007245790155" blue="0.007245790155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="HUl-eS-9br" kind="show" id="DL8-7g-8BG"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -154,10 +117,11 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BuN-TT-3zg"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="4Ev-1l-FZg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4o-Jo-F1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947.826086956522" y="138.61607142857142"/>
+            <point key="canvasLocation" x="2857.971014492754" y="138.61607142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sR7-nf-4Mm">
@@ -266,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGD-Sn-6yU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2773.913043478261" y="138.61607142857142"/>
+            <point key="canvasLocation" x="3684.057971014493" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
