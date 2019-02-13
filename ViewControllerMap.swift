@@ -15,7 +15,7 @@ class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var mapView: MKMapView! // Reference alla mapView
     
     var locationManager: CLLocationManager! // variabile che gestisce la posizione
-    var userPosition: CLLocationCoordinate2D! // variabile che imposta la posizione utente
+    var userPosition: CLLocationCoordinate2D? // variabile che imposta la posizione utente
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +30,15 @@ class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     
-    
     // Funzione che imposta la visualizzazione a seguire il punto
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         self.userPosition = userLocation.coordinate
         
         print("update position - lat: \(userLocation.coordinate.latitude) long: \(userLocation.coordinate.longitude)") // Print a console delle coordinate aggiornate
-        
-        //let span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03) // span che imposta lo zoom
+
         
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        let region = MKCoordinateRegion(center: userPosition, span: span) // Regione visualizzata ogniqualvolta si aggiorna
+        let region = MKCoordinateRegion(center: userLocation.coordinate, span: span) // Regione visualizzata ogniqualvolta si aggiorna
         mapView.setRegion(region, animated: true) // Animazione della region quando zoomma
         
         self.mapView.showsUserLocation = true
