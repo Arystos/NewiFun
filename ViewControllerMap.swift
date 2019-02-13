@@ -27,8 +27,9 @@ class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerD
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters //Precisione della posizione
         locationManager.requestWhenInUseAuthorization() //Se non è attiva la posizione è richiesta la geolocalizzazione
         locationManager.startUpdatingLocation() //Recupera e aggiorna gli spostamenti utente
-        
     }
+    
+    
     
     // Funzione che imposta la visualizzazione a seguire il punto
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
@@ -39,14 +40,11 @@ class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerD
         //let span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03) // span che imposta lo zoom
         
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        
         let region = MKCoordinateRegion(center: userPosition, span: span) // Regione visualizzata ogniqualvolta si aggiorna
-        
         mapView.setRegion(region, animated: true) // Animazione della region quando zoomma
         
         self.mapView.showsUserLocation = true
     }
-    
 
     /*
     // MARK: - Navigation
