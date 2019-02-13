@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		19D8EAF92213031F00551429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EAF82213031F00551429 /* AppDelegate.swift */; };
-		19D8EAFB2213031F00551429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EAFA2213031F00551429 /* ViewController.swift */; };
+		19D8EAFB2213031F00551429 /* launchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EAFA2213031F00551429 /* launchscreen.swift */; };
 		19D8EAFE2213031F00551429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EAFC2213031F00551429 /* Main.storyboard */; };
 		19D8EB002213032000551429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EAFF2213032000551429 /* Assets.xcassets */; };
 		19D8EB032213032000551429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EB012213032000551429 /* LaunchScreen.storyboard */; };
 		19D8EB0D2213064C00551429 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EB0C2213064C00551429 /* ViewControllerMap.swift */; };
+		B08B6FB4221422D300AC8581 /* bambinochevafuocolaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */; };
+		B08B6FB822142C3600AC8581 /* bambinoafuoco icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08B6FB722142C3600AC8581 /* bambinoafuoco icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19D8EAF52213031F00551429 /* NewiFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewiFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D8EAF82213031F00551429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19D8EAFA2213031F00551429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19D8EAFA2213031F00551429 /* launchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchscreen.swift; sourceTree = "<group>"; };
 		19D8EAFD2213031F00551429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19D8EAFF2213032000551429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D8EB022213032000551429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D8EB042213032000551429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19D8EB0C2213064C00551429 /* ViewControllerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerMap.swift; path = ../ViewControllerMap.swift; sourceTree = "<group>"; };
+		B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bambinochevafuocolaunch.png; path = ../../bambinochevafuocolaunch.png; sourceTree = "<group>"; };
+		B08B6FB722142C3600AC8581 /* bambinoafuoco icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bambinoafuoco icon.png"; path = "../../bambinoafuoco icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				19D8EAF82213031F00551429 /* AppDelegate.swift */,
-				19D8EAFA2213031F00551429 /* ViewController.swift */,
+				19D8EAFA2213031F00551429 /* launchscreen.swift */,
 				19D8EB0C2213064C00551429 /* ViewControllerMap.swift */,
 				19D8EAFC2213031F00551429 /* Main.storyboard */,
+				B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */,
 				19D8EAFF2213032000551429 /* Assets.xcassets */,
+				B08B6FB722142C3600AC8581 /* bambinoafuoco icon.png */,
 				19D8EB012213032000551429 /* LaunchScreen.storyboard */,
 				19D8EB042213032000551429 /* Info.plist */,
 			);
@@ -126,8 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D8EB032213032000551429 /* LaunchScreen.storyboard in Resources */,
+				B08B6FB4221422D300AC8581 /* bambinochevafuocolaunch.png in Resources */,
 				19D8EB002213032000551429 /* Assets.xcassets in Resources */,
 				19D8EAFE2213031F00551429 /* Main.storyboard in Resources */,
+				B08B6FB822142C3600AC8581 /* bambinoafuoco icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D8EAFB2213031F00551429 /* ViewController.swift in Sources */,
+				19D8EAFB2213031F00551429 /* launchscreen.swift in Sources */,
 				19D8EAF92213031F00551429 /* AppDelegate.swift in Sources */,
 				19D8EB0D2213064C00551429 /* ViewControllerMap.swift in Sources */,
 			);
