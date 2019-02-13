@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OlY-yC-KU7">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,13 +28,14 @@
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
                                 <connections>
                                     <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="RxW-TP-WeV"/>
-                                    <segue destination="7CI-JG-McA" kind="show" id="ZVJ-SO-3RO"/>
+                                    <segue destination="7CI-JG-McA" kind="show" id="L3N-Ji-nGT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eX1-fK-EUL"/>
                     <connections>
                         <outlet property="bottone1" destination="duN-6T-jtA" id="xLD-g5-ofm"/>
                         <outlet property="bottone2" destination="XBA-Qu-WZP" id="LeR-VJ-AVQ"/>
@@ -45,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="143"/>
+            <point key="canvasLocation" x="1286.9565217391305" y="142.63392857142856"/>
         </scene>
         <!--scenaricerca-->
         <scene sceneID="uGU-h2-jfJ">
@@ -70,11 +71,10 @@
                                     <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qn2-NK-Ufb"/>
                                     <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="Jjl-Vf-WpS"/>
                                     <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-db-aBb"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="u0L-dq-QA1"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
-                                <rect key="frame" x="20" y="510" width="374" height="56"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
+                                <rect key="frame" x="19" y="520" width="374" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -85,10 +85,36 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K1A-ga-Z86"/>
                     </view>
+                    <navigationItem key="navigationItem" id="W9C-dA-Bhi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNV-5S-pgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="143"/>
+            <point key="canvasLocation" x="2313" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GZ3-fP-Btz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OlY-yC-KU7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="AaA-iM-IRK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.14685386989999999" green="0.94888100180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.14685386989999999" green="0.94888100180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.14685386989999999" green="0.94888100180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mEY-qC-f96"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjK-gP-eL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.81159420289856" y="142.63392857142856"/>
         </scene>
     </scenes>
     <resources>

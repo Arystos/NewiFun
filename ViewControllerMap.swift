@@ -17,15 +17,28 @@ class ViewControllerMap: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet var bottone2: UIButton!
     @IBOutlet var bottone1: UIButton!
     
-    
-    
+  
     @IBOutlet weak var mapView: MKMapView! // Reference alla mapView
     
     var locationManager: CLLocationManager! // variabile che gestisce la posizione
     var userPosition: CLLocationCoordinate2D? // variabile che imposta la posizione utente
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+       
+       
+        
         
         self.mapView.delegate = self // Delegato alla gestione del ViewControllerMap
         self.locationManager = CLLocationManager() // inizializzazione della CLLocation in locationManager
