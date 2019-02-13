@@ -28,33 +28,9 @@
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
                                 <connections>
                                     <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="RxW-TP-WeV"/>
+                                    <segue destination="7CI-JG-McA" kind="show" id="ZVJ-SO-3RO"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-Qu-WZP">
-                                <rect key="frame" x="60" y="116" width="295" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bambinoafuoco icon"/>
-                                <connections>
-                                    <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qn2-NK-Ufb"/>
-                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="Jjl-Vf-WpS"/>
-                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-db-aBb"/>
-                                </connections>
-                            </button>
-                            <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" barStyle="black" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
-                                <rect key="frame" x="20" y="527" width="374" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                            </searchBar>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOVE VUOI ANDARE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-uk-nOt">
-                                <rect key="frame" x="60" y="468" width="295" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,6 +54,34 @@
                     <view key="view" contentMode="scaleToFill" id="Qht-Ll-as1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOVE VUOI ANDARE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-uk-nOt">
+                                <rect key="frame" x="59" y="425" width="295" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-Qu-WZP">
+                                <rect key="frame" x="60" y="103" width="295" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="bambinoafuoco icon"/>
+                                <connections>
+                                    <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qn2-NK-Ufb"/>
+                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="Jjl-Vf-WpS"/>
+                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-db-aBb"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="u0L-dq-QA1"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
+                                <rect key="frame" x="20" y="510" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K1A-ga-Z86"/>
                     </view>
