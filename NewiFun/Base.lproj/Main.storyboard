@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambinochevafuocolaunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-zJ-eFk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambinochevafuocolaunch" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-zJ-eFk">
                                 <rect key="frame" x="0.0" y="247" width="414" height="403"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -52,7 +52,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duN-6T-jtA">
                                 <rect key="frame" x="149" y="744" width="116" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bambinoafuoco icon.png"/>
+                                <state key="normal" title="Button" image="bambinoafuoco icon"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,7 +68,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bambinoafuoco icon.png" width="823" height="838"/>
-        <image name="bambinochevafuocolaunch.png" width="1000" height="1000"/>
+        <image name="bambinoafuoco icon" width="411" height="419"/>
+        <image name="bambinochevafuocolaunch" width="500" height="500"/>
     </resources>
 </document>
