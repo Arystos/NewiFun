@@ -13,6 +13,7 @@
 		19D8EB002213032000551429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EAFF2213032000551429 /* Assets.xcassets */; };
 		19D8EB032213032000551429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8EB012213032000551429 /* LaunchScreen.storyboard */; };
 		19D8EB0D2213064C00551429 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8EB0C2213064C00551429 /* ViewControllerMap.swift */; };
+		3B55102A221422920014F4FB /* bambinoafuoco iconpiccopla.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B551029221422920014F4FB /* bambinoafuoco iconpiccopla.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		19D8EB022213032000551429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D8EB042213032000551429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19D8EB0C2213064C00551429 /* ViewControllerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerMap.swift; path = ../ViewControllerMap.swift; sourceTree = "<group>"; };
+		3B551029221422920014F4FB /* bambinoafuoco iconpiccopla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoafuoco iconpiccopla.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				19D8EAFF2213032000551429 /* Assets.xcassets */,
 				19D8EB012213032000551429 /* LaunchScreen.storyboard */,
 				19D8EB042213032000551429 /* Info.plist */,
+				3B551029221422920014F4FB /* bambinoafuoco iconpiccopla.png */,
 			);
 			path = NewiFun;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				19D8EB032213032000551429 /* LaunchScreen.storyboard in Resources */,
 				19D8EB002213032000551429 /* Assets.xcassets in Resources */,
+				3B55102A221422920014F4FB /* bambinoafuoco iconpiccopla.png in Resources */,
 				19D8EAFE2213031F00551429 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
