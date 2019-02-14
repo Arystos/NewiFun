@@ -16,6 +16,8 @@
 		B08B6FB4221422D300AC8581 /* bambinochevafuocolaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */; };
 		B08B6FB822142C3600AC8581 /* bambinoafuoco icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08B6FB722142C3600AC8581 /* bambinoafuoco icon.png */; };
 		B08B6FBA2214556600AC8581 /* ScenaRicerca.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08B6FB92214556600AC8581 /* ScenaRicerca.swift */; };
+		B0966FBE221567CA00BED135 /* ricercaCompleta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0966FBD221567CA00BED135 /* ricercaCompleta.swift */; };
+		B0966FC02215700400BED135 /* tab bar controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0966FBF2215700400BED135 /* tab bar controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bambinochevafuocolaunch.png; path = ../../bambinochevafuocolaunch.png; sourceTree = "<group>"; };
 		B08B6FB722142C3600AC8581 /* bambinoafuoco icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bambinoafuoco icon.png"; path = "../../bambinoafuoco icon.png"; sourceTree = "<group>"; };
 		B08B6FB92214556600AC8581 /* ScenaRicerca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenaRicerca.swift; sourceTree = "<group>"; };
+		B0966FBD221567CA00BED135 /* ricercaCompleta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricercaCompleta.swift; sourceTree = "<group>"; };
+		B0966FBF2215700400BED135 /* tab bar controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tab bar controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				19D8EAFA2213031F00551429 /* launchscreen.swift */,
 				19D8EB0C2213064C00551429 /* ViewControllerMap.swift */,
 				19D8EAFC2213031F00551429 /* Main.storyboard */,
+				B0966FBF2215700400BED135 /* tab bar controller.swift */,
+				B0966FBD221567CA00BED135 /* ricercaCompleta.swift */,
 				B08B6FB92214556600AC8581 /* ScenaRicerca.swift */,
 				B08B6FB3221422D300AC8581 /* bambinochevafuocolaunch.png */,
 				19D8EAFF2213032000551429 /* Assets.xcassets */,
@@ -150,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08B6FBA2214556600AC8581 /* ScenaRicerca.swift in Sources */,
+				B0966FC02215700400BED135 /* tab bar controller.swift in Sources */,
 				19D8EAFB2213031F00551429 /* launchscreen.swift in Sources */,
 				19D8EAF92213031F00551429 /* AppDelegate.swift in Sources */,
 				19D8EB0D2213064C00551429 /* ViewControllerMap.swift in Sources */,
+				B0966FBE221567CA00BED135 /* ricercaCompleta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

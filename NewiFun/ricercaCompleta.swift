@@ -1,22 +1,22 @@
 //
-//  ScenaRicerca.swift
+//  ricercaCompleta.swift
 //  NewiFun
 //
-//  Created by Francesca Cosmo on 13/02/2019.
+//  Created by Francesca Cosmo on 14/02/2019.
 //  Copyright © 2019 Safety. All rights reserved.
 //
 
 import UIKit
 
-class ScenaRicerca: UIViewController {
-
+class ricercaCompleta: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+
         // Do any additional setup after loading the view.
     }
     

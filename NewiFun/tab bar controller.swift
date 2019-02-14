@@ -1,22 +1,19 @@
 //
-//  ScenaRicerca.swift
+//  tab bar controller.swift
 //  NewiFun
 //
-//  Created by Francesca Cosmo on 13/02/2019.
+//  Created by Francesca Cosmo on 14/02/2019.
 //  Copyright © 2019 Safety. All rights reserved.
 //
 
 import UIKit
 
-class ScenaRicerca: UIViewController {
-
+class tab_bar_controller: UITabBarController {
     
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
-    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+
         // Do any additional setup after loading the view.
     }
     
