@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duN-6T-jtA">
-                                <rect key="frame" x="149" y="744" width="116" height="118"/>
+                                <rect key="frame" x="278" y="744" width="116" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
                                 <connections>
@@ -38,7 +38,6 @@
                     <navigationItem key="navigationItem" id="eX1-fK-EUL"/>
                     <connections>
                         <outlet property="bottone1" destination="duN-6T-jtA" id="xLD-g5-ofm"/>
-                        <outlet property="bottone2" destination="XBA-Qu-WZP" id="LeR-VJ-AVQ"/>
                         <outlet property="dovevuoiandare" destination="TqU-uk-nOt" id="zQT-fD-lgS"/>
                         <outlet property="mapView" destination="iqs-b3-W9Y" id="hoM-WY-jIA"/>
                         <outlet property="searchBar" destination="VtE-Es-ZO9" id="DaA-YE-8Zb"/>
@@ -57,24 +56,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOVE VUOI ANDARE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-uk-nOt">
-                                <rect key="frame" x="59" y="425" width="295" height="45"/>
+                                <rect key="frame" x="59" y="113" width="295" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-Qu-WZP">
-                                <rect key="frame" x="60" y="103" width="295" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bambinoafuoco icon"/>
-                                <connections>
-                                    <action selector="bottone1:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qn2-NK-Ufb"/>
-                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="Jjl-Vf-WpS"/>
-                                    <action selector="bottone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-db-aBb"/>
-                                </connections>
-                            </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
-                                <rect key="frame" x="19" y="520" width="374" height="56"/>
+                                <rect key="frame" x="19" y="158" width="374" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
