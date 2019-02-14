@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duN-6T-jtA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duN-6T-jtA" userLabel="MainBoutton">
                                 <rect key="frame" x="278" y="744" width="116" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bambinoafuoco icon"/>
@@ -56,143 +56,103 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOVE VUOI ANDARE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-uk-nOt">
-                                <rect key="frame" x="59" y="35" width="295" height="45"/>
+                                <rect key="frame" x="59" y="113" width="295" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="VtE-Es-ZO9">
-                                <rect key="frame" x="19" y="80" width="374" height="56"/>
+                                <rect key="frame" x="19" y="158" width="374" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="alert" smartQuotesType="yes" textContentType="location"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgQ-c6-MHa">
-                                <rect key="frame" x="184" y="247" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="tOW-mw-c1K" kind="show" id="xir-lS-QGJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K1A-ga-Z86"/>
                     </view>
                     <navigationItem key="navigationItem" id="W9C-dA-Bhi"/>
+                    <connections>
+                        <segue destination="dgh-hQ-kM6" kind="show" id="9wb-jU-W5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNV-5S-pgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2313" y="143"/>
         </scene>
-        <!--Ricerca Completa-->
-        <scene sceneID="wbs-fb-AKD">
+        <!--Item 2-->
+        <scene sceneID="m32-IQ-Jxq">
             <objects>
-                <viewController id="tOW-mw-c1K" customClass="ricercaCompleta" customModule="NewiFun" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="J6f-Vr-yoB">
+                <viewController id="UdL-sB-EXl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhU-OS-JgO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zxK-fM-Nkq">
-                                <rect key="frame" x="20" y="105" width="374" height="285"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-e2-Uu8">
-                                <rect key="frame" x="20" y="421" width="374" height="441"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" textLabel="NaP-Wi-Ze7" style="IBUITableViewCellStyleDefault" id="bku-vm-pDq">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bku-vm-pDq" id="dqy-gW-GzB">
-                                            <rect key="frame" x="0.0" y="0.0" width="302" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NaP-Wi-Ze7">
-                                                    <rect key="frame" x="20" y="0.0" width="282" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nco-29-Gkb">
-                                <rect key="frame" x="319" y="62" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pa-SE-uDi">
-                                <rect key="frame" x="184" y="383" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="AXE-56-PDi" kind="show" id="bdj-RI-R5g"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Yzn-4v-C0O"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BVa-07-DAQ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="4r4-dq-w5o"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s7C-N1-ljA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jn-M7-svr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3331.884057971015" y="142.63392857142856"/>
+            <point key="canvasLocation" x="4422" y="1075"/>
         </scene>
-        <!--informazioni-->
-        <scene sceneID="G73-bW-Ib6">
+        <!--Item 1-->
+        <scene sceneID="3ad-6n-X5w">
             <objects>
-                <viewController title="informazioni" id="r3j-Mg-ZIZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xbS-84-qZd">
+                <viewController id="yYT-I9-FKz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BVV-n5-YuE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="sxE-0l-VfP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8bu-gD-ubs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="info bottone" id="EiT-Ld-ieH"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="rVL-4d-80d"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x1a-MA-It9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oO-3V-JLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5421.739130434783" y="128.57142857142856"/>
+            <point key="canvasLocation" x="4422" y="-659"/>
         </scene>
-        <!--pericoli-->
-        <scene sceneID="9lM-gB-7Ih">
+        <!--Tab Bar Controller-->
+        <scene sceneID="c06-28-yR0">
             <objects>
-                <viewController title="pericoli" id="4QG-iO-9tn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pvK-xb-Mem">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aBC-iZ-Kk1"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="pericolo bottone" id="4jX-Qe-1aq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="180-iV-HYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="dgh-hQ-kM6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JuE-4O-V8h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yYT-I9-FKz" kind="relationship" relationship="viewControllers" id="5KS-IM-vBn"/>
+                        <segue destination="UdL-sB-EXl" kind="relationship" relationship="viewControllers" id="EkQ-06-Zvs"/>
+                        <segue destination="ez3-nU-A9Z" kind="relationship" relationship="viewControllers" id="LKT-k9-ypU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VK0-OP-TSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4787" y="1179"/>
+            <point key="canvasLocation" x="3490" y="143"/>
         </scene>
-        <!--tips-->
-        <scene sceneID="KAx-Zq-VDg">
+        <!--Item-->
+        <scene sceneID="y6l-gG-6Ab">
             <objects>
-                <viewController title="tips" id="HyD-la-puU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ync-4M-SMg">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUh-eZ-9Gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ez3-nU-A9Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qEB-CW-JpB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="U7X-kU-chN"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xyl-B3-jt2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="tips bottone" id="TmR-7a-UAK"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="NBG-sF-VFa"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HHC-DO-0yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6139" y="1179"/>
+            <point key="canvasLocation" x="4635" y="147"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GZ3-fP-Btz">
@@ -219,32 +179,8 @@
             </objects>
             <point key="canvasLocation" x="376.81159420289856" y="142.63392857142856"/>
         </scene>
-        <!--Tab bar controller-->
-        <scene sceneID="LkM-pq-H51">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AXE-56-PDi" customClass="tab_bar_controller" customModule="NewiFun" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="09R-dj-hBL">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.14685386989999999" green="0.94888100180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" red="0.14685386989999999" green="0.94888100180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="r3j-Mg-ZIZ" kind="relationship" relationship="viewControllers" id="BP3-D3-HDD"/>
-                        <segue destination="4QG-iO-9tn" kind="relationship" relationship="viewControllers" id="haJ-aa-gT0"/>
-                        <segue destination="HyD-la-puU" kind="relationship" relationship="viewControllers" id="7Nr-6e-Ru3"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqV-4M-3gS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4413" y="129"/>
-        </scene>
     </scenes>
     <resources>
         <image name="bambinoafuoco icon" width="411" height="419"/>
-        <image name="info bottone" width="33" height="33"/>
-        <image name="pericolo bottone" width="33" height="33"/>
-        <image name="tips bottone" width="33" height="33"/>
     </resources>
 </document>
